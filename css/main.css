@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #444;
+}
+
+.all {
+    width: 100%;
+    /* height: 600px; */
+    position: relative;
+}
+
+.topic {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 50px 0px 10px 0px;
+}
+
+.add {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.add input {
+    background-color: rgb(41, 41, 41);
+    color: white;
+    width: 40%;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+}
+
+.add button {
+    width: 80px;
+    font-size: 18px;
+    color: green;
+    background-color: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 2px solid green;
+    margin-left: 5px;
+    position: absolute;
+    top: 6px;
+}
+
+.tasks {
+    width: 70%;
+    padding-top: 30px;
+    position: absolute;
+    left: 15%;
+}
+
+.tasks .container{
+    width: 100%;
+}
+
+.tasks .subtopic {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 20px;
+}
+
+
+.tasks .container .row {
+    background-color: rgb(41, 41, 41);
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+}
+
+.tasks .container .row input {
+    width: 80%;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: transparent;
+    color: white;
+    border: 0px transparent;
+}
+
+.tasks .container .row .options {
+    padding-top: 5px;
+}
+
+.tasks .container .row .options button {
+    font-weight: bold;
+    font-size: 16px;
+    background-color: transparent;
+    display: block;
+    width: 150px;
+    height: 30px;
+    border-radius: 40px;
+    padding: 3px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.tasks .container .row .options .update {
+    color: green;
+    border: 2px solid green;
+}
+
+.tasks .container .row .options .edit {
+    color: purple;
+    border: 2px solid purple;
+}
+
+.tasks .container .row .options .delete {
+    color: red;
+    border: 2px solid red;
+}
+
+@media(max-width:600px){
+    .add{
+        text-align: unset;
+    }
+
+    .add input{
+        width: 68%;
+        margin-left: 10px;
+    }
+
+    .tasks{
+        left: 0;
+        width: 94%;
+        
+    }
+}
